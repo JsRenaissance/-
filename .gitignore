@@ -1,0 +1,56 @@
+# --- OS & Tool (운영체제 및 에디터) ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.log
+*.class
+
+# --- Security (★중요: 절대 올리면 안 되는 비밀키들) ---
+# API Key, DB 비밀번호가 들어가는 설정 파일들
+.env
+application.yml
+application.properties
+key.properties
+*.jks
+*.keystore
+
+# --- Flutter (Front) ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+android/.gradle
+android/local.properties
+coverage/
+android/app/release/*.keystore
+
+# --- Spring Boot (Back) ---
+/backend/target/
+/backend/build/
+/backend/out/
+/backend/.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+# 로그 파일 무시
+/backend/logs/
+
+# --- Python & AI (AI) ---
+__pycache__/
+*.py[cod]
+/ai/venv/
+/ai/.env
+.ipynb_checkpoints/
+/ai/data/
+/ai/logs/
+
+# --- AI Models (★중요: 100MB 넘으면 에러남) ---
+# 모델 파일은 깃허브에 올리지 말고 구글 드라이브 등으로 공유하세요
+*.h5
+*.pt
+*.pth
+*.tflite
+*.onnx
+saved_model/
